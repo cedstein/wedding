@@ -29,14 +29,13 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <nav>
-          <Link href={"Start"}>
-            <Link href={"Info"}></Link>
-          </Link>
-          <Link href={"OSA"}></Link>
+        <nav className="flex justify-end p-2 ">
+          <Link href={"Start"}>Start</Link>
+          <Link href={"Info"}>Info</Link>
+          <Link href={"OSA"}>OSA</Link>
         </nav>
         <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-          <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+          <main className="flex flex-1 w-full  flex-col items-center py-32 px-16 bg-white dark:bg-black sm:items-start">
             {children}
           </main>
         </div>
