@@ -84,16 +84,16 @@ export default function Header() {
                   Kartor
                 </Link>
                 <Link
-                  href="/contact"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-                >
-                  Kontakta
-                </Link>
-                <Link
                   href="/hotel"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
                 >
                   Boende
+                </Link>
+                <Link
+                  href="/contact"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                >
+                  Kontakta
                 </Link>
               </div>
             )}
@@ -149,8 +149,32 @@ export default function Header() {
               >
                 Schema
               </Link>
+              <Link
+                href="/vigsel"
+                className="block px-4 py-3 border-b border-gray-100"
+              >
+                Vigsel
+              </Link>
+              <Link
+                href="/dinner"
+                className="block px-4 py-3 border-b border-gray-100"
+              >
+                Middag
+              </Link>
+              <Link
+                href="/tal"
+                className="block px-4 py-3 border-b border-gray-100"
+              >
+                Tal
+              </Link>
+              <Link
+                href="/gåvor"
+                className="block px-4 py-3 border-b border-gray-100"
+              >
+                Gåvor
+              </Link>
               <Link href="/location" className="block px-4 py-3">
-                Plats
+                Kartor
               </Link>
               <Link href="/hotel" className="block px-4 py-3">
                 Boende
