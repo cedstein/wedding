@@ -2,7 +2,7 @@ import { model, models, Schema } from "mongoose";
 import { v4 as uuidv4 } from "uuid";
 
 const personSchema = new Schema({
-  id: { type: String, required: true, default: () => uuidv4() },
+  id: { type: String, required: true /*  default: () => uuidv4()  */ },
   firstname: { type: String, required: true },
   lastname: { type: String, required: true },
   email: { type: String, required: true },
