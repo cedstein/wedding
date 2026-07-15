@@ -46,51 +46,51 @@ export default function Header() {
             </button>
 
             {infoOpen && (
-              <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-sm z-50">
+              <div className="absolute right-0 mt-2 w-56 bg-white border border-gray-200 rounded shadow-sm z-50">
                 <Link
-                  href="/schedule"
+                  href="/info#schedule"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
                 >
                   Schema
                 </Link>
                 <Link
-                  href="/vigsel"
+                  href="/info#vigsel"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
                 >
                   Vigsel
                 </Link>
                 <Link
-                  href="/dinner"
+                  href="/info#dinner"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
                 >
                   Middag
                 </Link>
                 <Link
-                  href="/tal"
+                  href="/info#tal"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
                 >
                   Tal
                 </Link>
                 <Link
-                  href="/presents"
+                  href="/info#presents"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
                 >
                   Gåvor
                 </Link>
                 <Link
-                  href="/location"
+                  href="/info#location"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
                 >
                   Kartor
                 </Link>
                 <Link
-                  href="/hotel"
+                  href="/info#hotel"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
                 >
                   Boende
                 </Link>
                 <Link
-                  href="/contact"
+                  href="/info#contact"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
                 >
                   Kontakta
@@ -119,24 +119,28 @@ export default function Header() {
             <div className="absolute right-4 top-16 w-56 bg-white border border-gray-200 rounded shadow-lg z-50">
               <Link
                 href="/"
+                onClick={() => setOpen(false)}
                 className="block px-4 py-3 border-b border-gray-100"
               >
                 Start
               </Link>
               <Link
                 href="/lovestory"
+                onClick={() => setOpen(false)}
                 className="text-gray-700 hover:text-gray-900"
               >
                 Vår kärlekshistoria
               </Link>
               <Link
                 href="/info"
+                onClick={() => setOpen(false)}
                 className="block px-4 py-3 border-b border-gray-100"
               >
                 Info
               </Link>
               <Link
                 href="/rsvp"
+                onClick={() => setOpen(false)}
                 className="block px-4 py-3 border-b border-gray-100"
               >
                 OSA
@@ -144,42 +148,59 @@ export default function Header() {
 
               {/* mobile submenu items (under the same menu) */}
               <Link
-                href="/schedule"
+                href="/info#schedule"
+                onClick={() => setOpen(false)}
                 className="block px-4 py-3 border-b border-gray-100"
               >
                 Schema
               </Link>
               <Link
-                href="/vigsel"
+                href="/info#vigsel"
+                onClick={() => setOpen(false)}
                 className="block px-4 py-3 border-b border-gray-100"
               >
                 Vigsel
               </Link>
               <Link
-                href="/dinner"
+                href="/info#dinner"
+                onClick={() => setOpen(false)}
                 className="block px-4 py-3 border-b border-gray-100"
               >
                 Middag
               </Link>
               <Link
-                href="/tal"
+                href="/info#tal"
+                onClick={() => setOpen(false)}
                 className="block px-4 py-3 border-b border-gray-100"
               >
                 Tal
               </Link>
               <Link
-                href="/gåvor"
+                href="/info#presents"
+                onClick={() => setOpen(false)}
                 className="block px-4 py-3 border-b border-gray-100"
               >
                 Gåvor
               </Link>
-              <Link href="/location" className="block px-4 py-3">
+              <Link
+                href="/info#location"
+                onClick={() => setOpen(false)}
+                className="block px-4 py-3"
+              >
                 Kartor
               </Link>
-              <Link href="/hotel" className="block px-4 py-3">
+              <Link
+                href="/info#hotel"
+                onClick={() => setOpen(false)}
+                className="block px-4 py-3"
+              >
                 Boende
               </Link>
-              <Link href="/contact" className="block px-4 py-3">
+              <Link
+                href="/info#contact"
+                onClick={() => setOpen(false)}
+                className="block px-4 py-3"
+              >
                 Kontakta
               </Link>
             </div>
